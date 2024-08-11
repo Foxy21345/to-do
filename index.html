@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AAAAAAAAAAAA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <ul id="taskList"></ul>
 
+        <div id="adminSection">
+            <input type="password" id="password" placeholder="Digite a senha de administrador">
+            <button onclick="checkPassword()">Entrar</button>
+            <div id="taskForm" style="display: none;">
+                <input type="text" id="taskInput" placeholder="Nova Tarefa">
+                <input type="datetime-local" id="taskDate">
+                <button onclick="addTask()">Adicionar Tarefa</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
