@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-login">
+        <button onclick="showLogin()">Logar como Administrador</button>
+        <div id="loginSection" style="display: none;">
+            <input type="password" id="password" placeholder="Senha do Admin">
+            <button onclick="checkPassword()">Entrar</button>
+        </div>
+    </div>
+
+    <div class="task-container">
+        <h1>Lista de Tarefas</h1>
+        <p id="noTasksMessage">Não há tarefas pendentes;</p>
+        <ul id="taskList"></ul>
+
+        <div id="adminSection" style="display: none;">
+            <input type="text" id="taskInput" placeholder="Nova Tarefa">
+            <input type="datetime-local" id="taskDate">
+            <button onclick="addTask()">Adicionar Tarefa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
